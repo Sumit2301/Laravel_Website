@@ -1,0 +1,4 @@
+[18-Dec-2023 12:49:19 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home3/scholoan/mymedicalcourse.com/config/cache.php:21
+Stack trace:
+#0 {main}
+  thrown in /home3/scholoan/mymedicalcourse.com/config/cache.php on line 21

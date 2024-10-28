@@ -1,0 +1,68 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/
+/* 
+Route::get('/', function () {
+    return view('auth.login');
+}); */
+/* Route::get('/', function () {
+    return view('frontend.home');
+}); */
+
+Route::get('/', 'Frontend\HomeController@index')->name('home');
+Route::get('/college/{url}', 'Frontend\CollegeController@details')->name('home');
+Route::get('/college/{url}/{detail}', 'Frontend\CollegeController@college_other_details')->name('college_other_details');
+Route::get('/college/{url}/course/{course}', 'Frontend\CollegeController@course')->name('college_other_details');
+Route::redirect('/college', '/');
+
+Route::redirect('/home', '/admin');
+Route::get('/login', 'Auth\LoginController@index')->name('login');
+Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
+Route::post('/login', 'Auth\LoginController@authenticate');
+
+Route::post('/cities', 'AjaxControllers\CityController@index');
+
+Route::group([ 'prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'middleware' => ['auth']], function () {
+	Route::get('/', 'HomeController@index')->name('home');
+	
+	/* Admin College route */
+	Route::get('/colleges', 'CollegeController@index')->name('colleges');
+	Route::get('/colleges/add-new', 'CollegeController@add_new')->name('colleges.add-new');
+	Route::post('/colleges/create', 'CollegeController@create')->name('colleges.create');
+	Route::get('/colleges/{id}/edit', 'CollegeController@edit')->name('colleges.edit');
+	Route::get('/colleges/{id}/{option?}/edit', 'CollegeController@edit')->name('colleges.editoption');
+	Route::get('/colleges/{id}/edit', 'CollegeController@edit')->name('colleges.edit');
+	Route::post('/colleges/update/{id}', 'CollegeController@update')->name('colleges.update');
+	Route::post('/colleges/placement/{id}', 'CollegeController@placement')->name('colleges.placement');
+	Route::post('/colleges/cutoff/{id}', 'CollegeController@cutoff')->name('colleges.cutoff');
+	Route::post('/colleges/admission/{id}', 'CollegeController@admission')->name('colleges.admission');
+	Route::post('/colleges/photos/{id}', 'CollegeController@photos')->name('colleges.photos');
+	Route::post('/colleges/photos/{id}/{imgId}', 'CollegeController@photoDel')->name('colleges.delete_photos');
+	
+	Route::get('/exams', 'ExamController@index')->name('exams');
+	Route::get('/exams/add-new', 'ExamController@add_new')->name('exams.add-new');
+	Route::post('/exams/create', 'ExamController@create')->name('exams.create');
+	Route::get('/exams/{id}/edit', 'ExamController@edit')->name('exams.edit');
+	Route::post('/exams/update/{id}', 'ExamController@update')->name('exams.update');
+	
+	Route::post('/course/{id}', 'CourseController@create')->name('course');
+	Route::get('/course/{collegeid}/{courseid}/edit', 'CourseController@edit')->name('course.edit');
+	Route::post('/course/update/{collegeid}/{courseid}', 'CourseController@update')->name('course.update');
+	
+	/* Admin Blog route */
+	Route::get('/blogs', 'BlogController@index')->name('blogs');
+	
+	
+	//Route::get('/', 'BlogController@index')->name('blog');
+});

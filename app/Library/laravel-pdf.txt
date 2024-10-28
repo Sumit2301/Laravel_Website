@@ -1,0 +1,11 @@
+use App\Library\Pdf;
+
+public function pdf()
+{
+	$data = [
+		'title' => 'Welcome to ItSolutionStuff.com',
+		'date' => date('m/d/Y')
+	];
+	$html           = view('pdf', $data);
+	PDF::createPDF($html, 'scholarship_', true);
+}

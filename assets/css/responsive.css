@@ -1,0 +1,382 @@
+
+
+@media only screen and (max-width:1920px) {
+	
+}
+
+@media only screen and (max-width:1680px) {
+	.about-two-col h2 {
+		margin-right: 0;
+	}
+}
+
+@media only screen and (max-width:1600px) {
+	.hero-two-area {
+		padding: 105px 0 25px;
+	}
+	.hero-col {
+		position: relative;
+		z-index: 2;
+		background:rgba(247, 243, 243, 0.87);
+		padding-bottom: 15px;
+		border-radius: 15px;
+	}
+
+}
+
+@media only screen and (max-width:1440px) {
+	.hero-area .container-fluid {
+	    padding: 0 80px;
+	}
+	.choice-box-col {
+		padding-left: 0;
+	}
+	.choice-box-position {
+    	padding: 30px 30px;
+    	right: -105px;
+	}
+	.choice-box {
+		max-width: 330px;
+		padding: 30px 20px;
+	}
+	.choice-box-position {
+		right: -20px;
+	}
+	.choice-box .choice-box-logo img {
+		max-width: 150px;
+	}
+	.choice-two-area .choice-box-position {
+		right: 0;
+	}
+
+}
+
+@media only screen and (max-width:1366px) {
+	.hero-col h1 {
+		font-size: 60px;
+	}
+}
+
+@media only screen and (max-width:1199px) {
+	.menu-right-side {
+		right: 80px;
+	}
+	.stellarnav {
+		justify-content: flex-end;
+	}
+	.stellarnav .menu-toggle span.bars {
+		margin-right: 0;
+	}
+	.stellarnav .menu-toggle span.bars span {
+		margin: 0 0 4px;
+		border-radius: 0;
+		width: 30px;
+    	height: 3px;
+	}
+	.stickyheader .header-menubar {
+		padding: 10px 0;
+	}
+	.stellarnav.mobile.left>ul, .stellarnav.mobile.right>ul {
+		max-width: 400px;
+	}
+	.stellarnav .dd-toggle {
+		width: 100%;
+		height: 70px;
+    	text-align: right;
+	}
+	.stellarnav>ul>li>a {
+		margin-left: 0;
+	}
+	.stellarnav.mobile>ul>li>a {
+		padding: 15px;
+	}
+	.stellarnav a.dd-toggle .icon-plus {
+	    margin-right: 30px;
+	}
+	.stellarnav .call-btn-mobile, .stellarnav .close-menu, 
+	.stellarnav .location-btn-mobile, .stellarnav .menu-toggle {
+		padding-right: 0;
+	}
+	.stellarnav.mobile.left .close-menu, 
+	.stellarnav.mobile.right .close-menu {
+		padding-right: 30px;
+	}
+	
+
+
+	.company-review-box-btn .theme-btn {
+		margin-bottom: 20px;
+		margin-right: 0;
+	}
+	.ratebox ul li {
+		font-size: 12px;
+	}
+	.ratebox ul li:first-child {
+		margin-right: 0;
+	}
+	.company-review-box-progress {
+		padding: 10px 10px 0;
+	}
+	.company-review-box-text {
+		padding-right: 0;
+	}
+	.company-review-box {
+		padding: 30px 20px 30px;
+	}
+	.choice-box-position {
+		position: relative;
+		right: auto;
+		top: auto;
+	}
+	.choice-box-col {
+		margin-top: 0;
+		margin-top: 30px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.choice-box {
+		max-width: 48%;
+		margin-bottom: 30px;
+	}
+	.vector-image-3 {
+		width: 60px;
+	}
+	.vector-image-2 {
+		width: 200px;
+	}
+	.choice-two-area .choice-box-position {
+		top: auto;
+	}
+	.choice-two-area .choice-box-col {
+		margin-top: 30px;
+	}
+	.choice-two-area {
+		padding-bottom: 90px;
+	}
+	.about-four-col .about-hilight-box {
+		min-width: auto;
+		padding: 40px 30px;
+	}
+	.about-four-img-col {
+		padding-left: 0;
+		text-align: center;
+	}
+	.categories-box,
+	.emergency-call-box {
+		padding: 20px;
+	}
+
+
+}
+
+@media only screen and (max-width:1024px) {
+	
+
+}
+
+@media only screen and (max-width:991px) {
+	.hero-area {
+		padding: 180px 0 0;
+		text-align: center;
+	}
+	.hero-col p {
+		padding-right: 0;
+	}
+	.vector-image-1 {
+		position: relative;
+		right: auto;
+		margin-top: 50px;
+	}
+	.about-col img {
+		display: block;
+		margin: 0 auto;
+	}
+	.about-col h2 {
+		margin-top: 0;
+	}
+	.company-review-box {
+		display: block;
+	}
+	.company-review-box-text {
+		border: none;
+		padding-right: 0;
+		width: 100%;
+	}
+	.company-review-box-progress {
+		padding: 0;
+		border: none;
+		width: 100%;
+	}
+	.company-review-box-logo {
+		width: 100%;
+		padding-left: 0;
+	}
+	.company-review-box-btn .theme-btn {
+		margin-bottom: 0;
+		margin-right: 10px;
+	}
+	.ratebox {
+		margin-top: 0;
+		display: block;
+		width: 100%;
+    	max-width: 250px;
+    	margin: 0 auto;
+	}
+	.reviews-bar p span {
+		padding-right: 0;
+	}
+	.choice-area {
+		padding: 120px 0 90px;
+	}
+	.testimonial-col {
+		padding: 50px 30px;
+	}
+	.header-area .container-fluid {
+		padding: 0 50px;
+	}
+	.hero-col .theme-btn {
+		margin-bottom: 50px;
+	}
+	.vector-image-2 {
+		position: relative;
+		right: auto;
+		display: flex;
+		justify-content: flex-end;
+		width: 100%;
+	}
+	.vector-image-3 {
+		left: 10px;
+	}
+	.hero-pagename-area {
+		padding-bottom: 120px;
+	}
+	.contact-form-box {
+		margin-left: 0;
+		margin-top: 30px;
+	}
+	.sidebar-box {
+		margin-left: 0;
+	}
+	.learn-sidebar {
+		margin-left: 0;
+	}
+}
+
+@media only screen and (max-width:767px) {
+	.title-col h2,
+	.about-col h2,
+	.about-two-col h2,
+	.about-four-col h2 {
+		font-size: 32px;
+	}
+	.choice-box {
+		max-width: 100%;
+	}
+	.header-area .container-fluid {
+		padding: 0 15px;
+	}
+	.hero-pagename-area .hero-col h2 {
+		font-size: 50px;
+	}
+	.compare-commentbox {
+		display: block;
+		text-align: center;
+	}
+	.compare-commentbox-img {
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
+	.btnbox {
+		display: block;
+		text-align: center;
+	}
+	.btnbox .btnbox-btn {
+		text-align: center;
+		margin-top: 20px;
+	}
+	.post-links {
+		display: block;
+	}
+	.post-link {
+		max-width: 100%;
+		margin-top: 20px;
+	}
+
+}
+
+@media only screen and (max-width:600px) {
+	
+}
+
+@media only screen and (max-width:575px) {
+	.hero-col h1 {
+	    font-size: 36px;
+	}
+	.hero-area .container-fluid,
+	.header-area .container-fluid {
+	    padding: 0 15px;
+	}
+	.pricing-col-header {
+		padding-right: 0;
+		padding-left: 0;
+	}
+	.pricing-col-header img {
+		max-width: 160px;
+	}
+	.footer-links-col ul li {
+		width: 100%;
+	}
+	.menu-right-side {
+	    right: 50px;
+	}
+}
+
+@media only screen and (max-width:480px) {
+	.menu-right-side a {
+		line-height: 42px;
+    	font-size: 14px;
+    	width: 120px;
+    	height: 40px;
+	}
+	.header-logo img {
+		max-width: 120px;
+	}
+	.hero-pagename-area .hero-col h2 {
+		font-size: 40px;
+	}
+	.contact-box img {
+		width: 50px;
+	}
+	.contact-box {
+		padding-left: 100px;
+	}
+	.comparelist-two li,
+	.comparelist-three li {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width:420px) {
+	
+}
+
+@media only screen and (max-width:375px) {
+	.header-logo img {
+		max-width: 100px;
+	}
+	.menu-right-side a {
+		line-height: 40px;
+    	font-size: 14px;
+    	width: 110px;
+    	height: 40px;
+	}
+	.menu-right-side {
+		right: 60px;
+	}
+}
+
+@media only screen and (max-width:320px) {
+	
+}
+
